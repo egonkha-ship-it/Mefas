@@ -1,3 +1,205 @@
-# Mefas
-Venda de megas
-vei vender megas
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Vended Magazine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  background: #ffffff;
+  padding: 15px;
+}
+
+/* mensagens */
+.msg-site {
+  background: #ffffff;
+  color: #000;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.msg-user {
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: right;
+}
+
+/* separação suave */
+.section {
+  background: #fafafa;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* tabela */
+.table {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.table h3 {
+  margin: 10px 0 5px;
+}
+
+/* botões */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-black {
+  background: #000;
+  color: #fff;
+}
+
+.btn-green {
+  background: #25d366;
+  color: #fff;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- INÍCIO -->
+  <div class="msg-site">
+    <b>Bem-vindo ao Vended Magazine</b><br><br>
+    Se chegou até aqui, é porque está interessado em comprar megabytes.<br>
+    Leia com atenção todas as informações abaixo.
+  </div>
+
+  <!-- TABELA COMPLETA -->
+  <div class="section table">
+    <h3>📆 PACOTES DIÁRIOS (24H)</h3>
+    2MT ➜ 100MB<br>
+    5MT ➜ 250MB<br>
+    10MT ➜ 600MB<br>
+    15MT ➜ 900MB<br>
+    20MT ➜ 1250MB<br>
+    25MT ➜ 1500MB<br>
+    30MT ➜ 1800MB<br>
+    34MT ➜ 2048MB<br>
+    40MT ➜ 2500MB<br>
+    50MT ➜ 3000MB<br>
+    60MT ➜ 3500MB<br>
+    70MT ➜ 4000MB<br>
+    80MT ➜ 4500MB<br>
+    100MT ➜ 6000MB<br>
+
+    <h3>📅 PACOTES SEMANAIS</h3>
+    30MT ➜ 1000MB<br>
+    45MT ➜ 1700MB<br>
+    60MT ➜ 2200MB<br>
+    80MT ➜ 2900MB<br>
+    100MT ➜ 3500MB<br>
+    120MT ➜ 4500MB<br>
+    150MT ➜ 5500MB<br>
+
+    <h3>📅 PACOTES MENSAIS</h3>
+    50MT ➜ 1.75GB<br>
+    100MT ➜ 3.45GB<br>
+    150MT ➜ 6GB<br>
+    200MT ➜ 8GB<br>
+    300MT ➜ 12GB<br>
+
+    <h3>♾️ PACOTES ILIMITADOS</h3>
+    450MT ➜ Chamadas + 11GB<br>
+    600MT ➜ Chamadas + 18GB<br>
+  </div>
+
+  <!-- ESCOLHA -->
+  <div class="section">
+    <div class="msg-site">
+      Escolha o tipo de pacote:
+    </div>
+    <select>
+      <option>Diário</option>
+      <option>Semanal</option>
+      <option>Mensal</option>
+      <option>Ilimitado</option>
+    </select>
+
+    <div class="msg-site">
+      Digite o pacote escolhido (ex: 10MT, 600MB, 2GB):
+    </div>
+    <input type="text">
+
+    <div class="msg-site">
+      Número que vai receber os megabytes:
+    </div>
+    <input type="text" placeholder="84xxxxxxx">
+  </div>
+
+  <!-- PAGAMENTO -->
+  <div class="section">
+    <div class="msg-site">
+      <b>Formas de Pagamento</b><br><br>
+      M-Pesa: <b>845646041</b><br>
+      e-Mola: <b>876353251</b><br><br>
+      Copie o número, faça a transferência no seu telefone e volte aqui.
+    </div>
+
+    <button class="btn-black">PAGAR COM M-PESA</button>
+    <button class="btn-black">PAGAR COM E-MOLA</button>
+  </div>
+
+  <!-- CONFIRMAÇÃO -->
+  <div class="section">
+    <div class="msg-site">
+      Cole aqui o comprovativo da transferência:
+    </div>
+    <textarea rows="4"></textarea>
+  </div>
+
+  <!-- RESUMO -->
+  <div class="section">
+    <div class="msg-site">
+      <b>RESUMO FINAL</b><br><br>
+      • Tipo de pacote escolhido<br>
+      • Quantidade comprada<br>
+      • Total em megabytes<br>
+      • Número de envio<br>
+      • Forma de pagamento<br>
+      • Comprovativo enviado
+    </div>
+  </div>
+
+  <!-- WHATSAPP -->
+  <button class="btn-green">
+    ENVIAR CONFIRMAÇÃO PARA WHATSAPP
+  </button>
+
+</div>
+
+</body>
+</html>
